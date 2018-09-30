@@ -101,7 +101,7 @@ class HeartsRenderer(context: Context) : Renderer(context) {
     fun getConfig() = config
 
     private fun initMaterial(bitmap: Bitmap, id: Int): Material {
-        val mat = Material().apply {
+        val mat = Material(true).apply {
             diffuseMethod = Lambert()
             color = 0
         }
